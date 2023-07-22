@@ -1,20 +1,20 @@
 # Apache Airflow 🚀
 
-### Despliegue 📦
+### Deploy 📦
 
-1) _Crear imagen de Docker_
+1) _Create Docker Image_
 
 ```
 docker build . -f Dockerfile -t pip-python:2.3.0
 ```
 
-2) _Levantar docker-compose con todos los servicios_
+2) _Deploy docker-compose with all services_
 
 ```
 docker-compose up -d
 ```
 
-## Control de contenedores ⚙️
+## Container verification ⚙️
 
 _Status_
 
@@ -28,13 +28,13 @@ _Logs_
 docker logs <<id_contenedor>>
 ```
 
-## Construido con 🛠️
+## Built by 🛠️
 
 Python, Apache Airflow y Docker
 
-* [Apache Airflow](https://airflow.apache.org/) - El framework usado
-* [Docker](https://www.docker.com//) - Herramienta de contenedores
+* [Apache Airflow](https://airflow.apache.org/)
+* [Docker](https://www.docker.com//)
 
-## Autor ✒️
+## Author ✒️
 
 * **Joaquin Alvarez** - [jalvarezcabada](https://github.com/jalvarezcabada)
