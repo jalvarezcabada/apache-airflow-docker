@@ -25,7 +25,7 @@ docker ps
 _Logs_
 
 ```
-docker logs <<id_contenedor>>
+docker logs <<container_id>>
 ```
 
 ## Built by 🛠️
