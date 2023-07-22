@@ -7,10 +7,10 @@ default_args = {
     'owner': 'owner_name',
     'start_date': datetime(2021, 10, 14),
     'email': ['email'],
-    # 'email_on_failure': True,
-    # 'email_on_retry': True,
-    # 'retries': 1,
-    # 'retry_delay': timedelta(minutes=1)
+    'email_on_failure': True,
+    'email_on_retry': True,
+    'retries': 1,
+    'retry_delay': timedelta(minutes=1)
 }
 
 @dag(
