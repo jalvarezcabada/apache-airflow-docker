@@ -5,7 +5,7 @@
 1) _Create Docker Image_
 
 ```
-docker build . -f Dockerfile -t pip-python:2.3.0
+docker build . -f Dockerfile -t airflow-dev:2.7.1
 ```
 
 2) _Deploy docker-compose with all services_
