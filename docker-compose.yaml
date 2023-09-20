@@ -57,6 +57,7 @@ services:
       _AIRFLOW_WWW_USER_PASSWORD: airflow
     volumes:
       - ./dags:/opt/airflow/dags
+      - ./plugins:/opt/airflow/plugins
     user: "${AIRFLOW_UID:-50000}:${AIRFLOW_GID:-0}"
     command: webserver
     depends_on:
@@ -77,6 +78,7 @@ services:
       <<: *airflow-common-env
     volumes:
       - ./dags:/opt/airflow/dags
+      - ./plugins:/opt/airflow/plugins
     user: "${AIRFLOW_UID:-50000}:${AIRFLOW_GID:-0}"
     command: scheduler
     depends_on:
@@ -105,6 +107,7 @@ services:
       <<: *airflow-common-env
     volumes:
       - ./dags:/opt/airflow/dags
+      - ./plugins:/opt/airflow/plugins
     user: "${AIRFLOW_UID:-50000}:${AIRFLOW_GID:-0}"
     command: celery worker
     depends_on:
