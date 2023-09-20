@@ -2,7 +2,7 @@
 # AUTHOR: Joaquin Cabada
 # DESCRIPTION: Instalacion de librerias y complementos
 
-FROM apache/airflow:slim-2.7.1-python3.10
+FROM apache/airflow:2.7.1-python3.10
 
 USER root
 
