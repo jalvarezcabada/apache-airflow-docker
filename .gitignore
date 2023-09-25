@@ -1,1 +1,3 @@
 dags/__pycache__/*
+plugins/__pycache__/dummy.cpython-310.pyc
+.DS_Store
